@@ -547,7 +547,7 @@
       class="text-bg-dark d-flex flex-column justify-content-center align-items-center py-4"
     >
       <p>
-        <button type="button" class="btn btn-outline-secondary">
+        <button type="button" class="btn btn-outline-secondary" id="contattaci">
           Contattaci
         </button>
         <button
@@ -571,30 +571,68 @@
       <p>&copy 2023 Otter Travel Agency. All Rights Reserved</p>
     </footer>
 
-    <div class="modal" tabindex="-1">
+    <div id="modale1" class="modal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+            <h5 class="modal-title">Contattaci</h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
+              id="close"
             ></button>
           </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Inserisci qui la tua email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
           </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Scrivi qui il tuo messaggio</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-primary"
+              id="send"
               data-bs-dismiss="modal"
             >
-              Close
+              Send
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modale2" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content text-bg-primary">
+          <div class="modal-header">
+            <h5 class="modal-title text-bg-primary">
+              Grazie di averci scritto, ti ricontatteremo appena possibile
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="close2"
+            ></button>
           </div>
         </div>
       </div>

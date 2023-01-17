@@ -60,3 +60,30 @@ const mostraCard = function () {
   btnRitorna.classList.add("d-none");
 };
 btnRitorna.addEventListener("click", mostraCard);
+const modale1 = document.getElementById("modale1");
+
+const btnContattaci = document.getElementById("contattaci");
+const mostraModale = function () {
+  modale1.classList.add("d-block");
+};
+btnContattaci.addEventListener("click", mostraModale);
+const btnClose = document.getElementById("close");
+const chiudiModale = function () {
+  modale1.classList.remove("d-block");
+};
+btnClose.addEventListener("click", chiudiModale);
+
+const btnsend = document.getElementById("send");
+const modale2 = document.getElementById("modale2");
+
+const manda = function () {
+  modale1.classList.remove("d-block");
+  modale2.classList.add("d-block");
+};
+
+btnsend.addEventListener("click", manda);
+const btnclose2 = document.getElementById("close2");
+const chiudi2 = function () {
+  modale2.classList.remove("d-block");
+};
+btnclose2.addEventListener("click", chiudi2);
