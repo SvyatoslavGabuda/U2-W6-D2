@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/673e01a1a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fa-solid fa-otter"></i> Otter Travels</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Welcome Summer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Last Minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recensioni</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<< MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <main>
+      <div class="container">
+        <div class="row shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+          <div class="col my-5">
+            <h1 class="fs-1 d-flex align-items-center">
+              <span>Otter Travels </span>
+              <span class="fs-6 text-secondary"> - Feel the Freedom </span>
+            </h1>
+            <hr />
+            <p class="fst-italic">
+              Scopri le destinazioni più calde del momento!
+            </p>
+            <button type="button" class="btn btn-info text-light fw-bolder">
+              Prenota ora
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SEZIONE SALDI >>>>>>>>>>>>>>>>>>>>>>>>>> -->
+      <div class="container my-3">
+        <div class="row">
+          <div class="col col-12 d-flex justify-content-between my-3 py-2">
+            <h2>Saldi</h2>
+            <button
+              type="button"
+              class="btn btn-outline-info"
+              id="nascondiSaldi"
+            >
+              Nascondi Sezione
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info d-none"
+              id="apriSaldi"
+            >
+              Apri Sezione
+            </button>
+          </div>
+        </div>
+        <!-- cards row >>>>>>>>>>>>>>>>>>>>>>>>>>x -->
+        <div id="saldi" class="row row-cols-2 row-cols-md-3 row-cols-xl-4">
+          <!-- cards >>>>>>>>>>>>>>>>>>>>>>>>>>x -->
+          <div class="col">
+            <div class="card border border-3 border-info rounded-3">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consequatur officiis fuga quis reiciendis ipsum.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-3 border-info rounded-3">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consequatur officiis fuga quis reiciendis ipsum.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-3 border-info rounded-3">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consequatur officiis fuga quis reiciendis ipsum.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!-- card che scompare -->
+          <div class="col d-md-none d-xl-block">
+            <div class="card border border-3 border-info rounded-3">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consequatur officiis fuga quis reiciendis ipsum.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!-- fine cards >>>>>>>>>>>>>>>>>>>>>>>>>>x -->
+        </div>
+      </div>
+      <!-- fine container saldi -->
+      <div class="container my-3">
+        <div class="row">
+          <div class="col col-12 d-flex justify-content-between my-3 py-2">
+            <h2>Welcome Summer</h2>
+            <button
+              type="button"
+              class="btn btn-outline-info"
+              id="nascondiWelcome"
+            >
+              Nascondi Sezione
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-info d-none"
+              id="apriWelcome"
+            >
+              Apri Sezione
+            </button>
+          </div>
+        </div>
+        <!-- card più grandi -->
+        <div id="welcome" class="row row-cols-2 row-cols-xl-3 row-cols-xxl-6">
+          <div class="col">
+            <div class="card border-0 position-relative shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias quod eaque tenetur accusamus optio porro voluptate
+                  consequatur perferendis in quaerat quis temporibus distinctio,
+                  repellat officiis magni inventore? Perferendis, delectus amet.
+                </p>
+                <a href="#" class="btn btn-primary">prenota</a>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  HOT
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 position-relative shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias quod eaque tenetur accusamus optio porro voluptate
+                  consequatur perferendis in quaerat quis temporibus distinctio,
+                  repellat officiis magni inventore? Perferendis, delectus amet.
+                </p>
+                <a href="#" class="btn btn-primary">prenota</a>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  HOT
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 position-relative shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias quod eaque tenetur accusamus optio porro voluptate
+                  consequatur perferendis in quaerat quis temporibus distinctio,
+                  repellat officiis magni inventore? Perferendis, delectus amet.
+                </p>
+                <a href="#" class="btn btn-primary">prenota</a>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  HOT
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 position-relative shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias quod eaque tenetur accusamus optio porro voluptate
+                  consequatur perferendis in quaerat quis temporibus distinctio,
+                  repellat officiis magni inventore? Perferendis, delectus amet.
+                </p>
+                <a href="#" class="btn btn-primary">prenota</a>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  HOT
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 position-relative shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias quod eaque tenetur accusamus optio porro voluptate
+                  consequatur perferendis in quaerat quis temporibus distinctio,
+                  repellat officiis magni inventore? Perferendis, delectus amet.
+                </p>
+                <a href="#" class="btn btn-primary">prenota</a>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  HOT
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 position-relative shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+                class="card-img-top"
+                alt="Bora Bora"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bora Bora</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias quod eaque tenetur accusamus optio porro voluptate
+                  consequatur perferendis in quaerat quis temporibus distinctio,
+                  repellat officiis magni inventore? Perferendis, delectus amet.
+                </p>
+                <a href="#" class="btn btn-primary">prenota</a>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  HOT
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- chiusura div row card grandi -->
+      </div>
+      <!-- fine sezione welcome>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>x -->
+      <div class="container my-3 d-none d-sm-block">
+        <div class="row">
+          <div class="col col-12">
+            <h2>Offerta del giorno</h2>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col col-6 col-md-8 shadow rounded-2">
+            <img
+              src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt="Bora Bora"
+              class="w-100 rounded-2"
+            />
+          </div>
+          <div class="col col-6 col-md-4">
+            <p class="fs-1">Bora Bora</p>
+            <p class="font-monospace fs-6">17.01.2023-31.01.2023</p>
+            <p class="lead fs-3">
+              Ville a partire da 500 £, non fatele sfuggire
+            </p>
+            <span class="badge text-bg-dark fs-5 rounded-pill">Best Offer</span>
+          </div>
+        </div>
+      </div>
+      <!-- last minute >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>x -->
+      <div class="container my-3">
+        <div class="row">
+          <div class="col col-12">
+            <h2>Last Minute</h2>
+          </div>
+        </div>
+        <div class="row row-cols-3 row-cols-md-6">
+          <div class="col card border-0">
+            <img
+              src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt="Bora Bora"
+              class="w-100 rounded-4"
+            />
+          </div>
+          <div class="col card border-0">
+            <img
+              src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt="Bora Bora"
+              class="w-100 rounded-4"
+            />
+          </div>
+          <div class="col card border-0">
+            <img
+              src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt="Bora Bora"
+              class="w-100 rounded-4"
+            />
+          </div>
+          <div class="col card border-0">
+            <img
+              src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt="Bora Bora"
+              class="w-100 rounded-4"
+            />
+          </div>
+          <div class="col card border-0">
+            <img
+              src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt="Bora Bora"
+              class="w-100 rounded-4"
+            />
+          </div>
+          <div class="col card border-0">
+            <img
+              src="https://images.unsplash.com/photo-1532408840957-031d8034aeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+              alt="Bora Bora"
+              class="w-100 rounded-4"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col col-12">
+            <h2 class="text-center">Dicono di noi</h2>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col col-1">
+            <div
+              class="text-secondary border border-1 border-info rounded-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="col col-11">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              quas. Non voluptate hic, quam asperiores eveniet natus
+              consequuntur impedit unde, voluptas commodi quaerat qui laboriosam
+              officiis sint voluptates perferendis incidunt. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Porro, recusandae id.
+              Tempora repellat quae voluptatum reiciendis earum explicabo culpa
+              corporis perferendis, pariatur est iusto quis animi ullam, minima
+              distinctio consequatur.
+            </p>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col col-1">
+            <div
+              class="text-secondary border border-1 border-info rounded-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="col col-11">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              quas. Non voluptate hic, quam asperiores eveniet natus
+              consequuntur impedit unde, voluptas commodi quaerat qui laboriosam
+              officiis sint voluptates perferendis incidunt. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Porro, recusandae id.
+              Tempora repellat quae voluptatum reiciendis earum explicabo culpa
+              corporis perferendis, pariatur est iusto quis animi ullam, minima
+              distinctio consequatur.
+            </p>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col col-1">
+            <div
+              class="text-secondary border border-1 border-info rounded-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="col col-11">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              quas. Non voluptate hic, quam asperiores eveniet natus
+              consequuntur impedit unde, voluptas commodi quaerat qui laboriosam
+              officiis sint voluptates perferendis incidunt. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Porro, recusandae id.
+              Tempora repellat quae voluptatum reiciendis earum explicabo culpa
+              corporis perferendis, pariatur est iusto quis animi ullam, minima
+              distinctio consequatur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer
+      class="text-bg-dark d-flex flex-column justify-content-center align-items-center py-4"
+    >
+      <p>
+        <button type="button" class="btn btn-outline-secondary">
+          Contattaci
+        </button>
+        <button
+          type="button"
+          id="contaViaggi"
+          class="btn btn-outline-secondary"
+        >
+          Scopri quandi Viaggi abbiamo
+        </button>
+        <button type="button" id="pulisci" class="btn btn-outline-secondary">
+          Pulisci
+        </button>
+        <button
+          type="button"
+          id="ritorna"
+          class="btn btn-outline-secondary d-none"
+        >
+          ritorna le card
+        </button>
+      </p>
+      <p>&copy 2023 Otter Travel Agency. All Rights Reserved</p>
+    </footer>
+
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
